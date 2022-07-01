@@ -23,11 +23,11 @@ function App() {
       <form className="wrap" onSubmit={evt => { sendForm(evt) }}>
         <fieldset className="field-area">
           <label htmlFor="name">Name: </label>
-          <input type="text" id="name" />
+          <input type="text" id="name" name="name" required />
         </fieldset>
         <fieldset className="field-area">
           <label htmlFor="password">Pass: </label>
-          <input type="password" id="password" />
+          <input type="password" id="password" required />
         </fieldset>
         <button type="submit">Login</button>
       </form>
